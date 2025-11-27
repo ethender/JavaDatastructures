@@ -19,3 +19,12 @@ In other words, return true if one of s1's permutations is the substring of s2.
 `Input: s1 = "ab", s2 = "eidbaooo"
 Output: true
 Explanation: s2 contains one permutation of s1 ("ba").`
+
+
+# 3. Longest Substring Without Repeating Characters
+
+Given a string s, find the length of the longest substring without duplicate characters.
+
+`Input: s = "abcabcbb"
+Output: 3
+Explanation: The answer is "abc", with the length of 3. Note that "bca" and "cab" are also correct answers.`
