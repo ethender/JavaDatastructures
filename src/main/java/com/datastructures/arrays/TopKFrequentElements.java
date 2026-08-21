@@ -4,25 +4,11 @@ import java.util.*;
 
 public class TopKFrequentElements {
 
-    class FreqElements implements Comparator<Integer> {
-
-        int element;
-        int count;
-        public FreqElements(int element, int count) {
-            this.element = element;
-        }
-
-        @Override
-        public int compare(Integer o1, Integer o2) {
-            return Integer.compare(o1, o2);
-        }
-    }
-
     public int[] topKFrequent(int[] nums, int k) {
         HashMap<Integer, Integer> map = new HashMap<>();
 
-        for (int i = 0; i < nums.length; i++) {
-            map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
+        for (int i : nums) {
+            map.put(i,map.getOrDefault(i, 0) + 1);
         }
 
 
@@ -35,7 +21,7 @@ public class TopKFrequentElements {
                 if(map.get(key) > max){
                     max = Math.max(map.get(key), max);
                     index = key;
-                };
+                }
             }
             result[i] = index;
             map.remove(index);
