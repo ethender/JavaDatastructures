@@ -1,6 +1,6 @@
 package com.datastructures.twopointers;
 
-public class TwoSumII {
+public class TwoSumIIsorted {
 
     public int[] twoSum(int[] numbers, int target) {
         int[] ans = new int[2];

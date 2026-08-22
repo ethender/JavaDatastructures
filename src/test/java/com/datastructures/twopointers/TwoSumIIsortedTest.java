@@ -5,14 +5,14 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-public class TwoSumIITest {
+public class TwoSumIIsortedTest {
 
-    private static TwoSumII twoSum;
+    private static TwoSumIIsorted twoSum;
 
 
     @BeforeAll
     public static void intialise(){
-        twoSum = new TwoSumII();
+        twoSum = new TwoSumIIsorted();
     }
 
     @Test
