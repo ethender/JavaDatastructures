@@ -1,6 +1,5 @@
 package com.datastructures.slidingwindow;
 
-import com.datastructures.twopointers.MergeSortedArray;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
