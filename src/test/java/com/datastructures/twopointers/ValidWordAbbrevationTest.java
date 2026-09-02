@@ -91,7 +91,7 @@ public class ValidWordAbbrevationTest {
     @Test
     public void test8(){
         String word = "hi";
-        String abbr = "1";vb
+        String abbr = "1";
 
         boolean expected = false;
         boolean actual = validWordAbbrevation.validWordAbbreviation(word, abbr);
