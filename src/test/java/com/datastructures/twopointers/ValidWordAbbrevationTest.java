@@ -56,4 +56,45 @@ public class ValidWordAbbrevationTest {
         boolean actual = validWordAbbrevation.validWordAbbreviation(word, abbr);
         assertEquals(expected,actual,"Expected :"+expected+" actual :"+actual);
     }
+
+    @Test
+    public void test5(){
+        String word = "abbde";
+        String abbr = "a1b01e";
+
+        boolean expected = false;
+        boolean actual = validWordAbbrevation.validWordAbbreviation(word, abbr);
+        assertEquals(expected,actual,"Expected :"+expected+" actual :"+actual);
+    }
+
+
+    @Test
+    public void test6(){
+        String word = "a";
+        String abbr = "2";
+
+        boolean expected = false;
+        boolean actual = validWordAbbrevation.validWordAbbreviation(word, abbr);
+        assertEquals(expected,actual,"Expected :"+expected+" actual :"+actual);
+    }
+
+    @Test
+    public void test7(){
+        String word = "hi";
+        String abbr = "hi1";
+
+        boolean expected = false;
+        boolean actual = validWordAbbrevation.validWordAbbreviation(word, abbr);
+        assertEquals(expected,actual,"Expected :"+expected+" actual :"+actual);
+    }
+
+    @Test
+    public void test8(){
+        String word = "hi";
+        String abbr = "1";vb
+
+        boolean expected = false;
+        boolean actual = validWordAbbrevation.validWordAbbreviation(word, abbr);
+        assertEquals(expected,actual,"Expected :"+expected+" actual :"+actual);
+    }
 }
